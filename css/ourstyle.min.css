@@ -1,4 +1,4 @@
-
+ 
  body{
  	font-size:20px;color:#212529;font-family:Lora,'Times New Roman',serif
  }
@@ -344,7 +344,7 @@ form .form-group:first-child .floating-label-form-group {
 }
 
 footer {
-  padding: 50px 0 65px;
+  padding: 5px 0 3px;
 }
 
 footer .list-inline {
@@ -353,8 +353,8 @@ footer .list-inline {
 }
 
 footer .copyright {
-  font-size: 14px;
-  margin-bottom: 0;
+  font-size: 16px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
