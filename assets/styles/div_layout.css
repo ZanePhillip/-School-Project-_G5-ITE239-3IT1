@@ -1,0 +1,215 @@
+@font-face
+{
+    font-family: casio;
+    src: url('eurostile.woff');
+}
+@font-face
+{
+    font-family: casio_bold;
+    src: url('EUROSTIB.ttf');
+}
+
+@font-face
+{
+    font-family: roboto;
+    src: url('Roboto-Regular.ttf');
+}
+
+body
+{
+    margin: 0;
+    font-family: roboto;
+    color: #313131;
+    background-color: rgb(214, 214, 214);
+}
+
+#header
+{
+    font-family: casio_bold;
+    padding: 8px;
+    background-color: #00327E;
+    color: white;
+    height: 60px;
+}
+
+#logoText
+{
+    margin-left: 200px;
+    letter-spacing: 1px;
+}
+
+#nav
+{
+    background-color: #010101;
+    color: white;
+    padding: 0 8px 0 203px;
+}
+
+.navButton
+{
+    background-color: #010101;
+    color: white;
+    border: none;
+    height: 40px;
+}
+
+.navButton:hover {background-color: teal;}
+.navButton:active {background-color: rgb(0, 95, 95);}
+
+.content
+{
+    display: flex;
+    width: 70%;
+    box-shadow: 0 6px 10px gray; 
+    margin-right: auto; margin-left: auto; 
+    background-color: white;
+}
+
+.article
+{
+    width: 60%;
+    background-color: white;
+    padding: 40px;
+}
+
+.article_content
+{
+    background-color: white;
+    text-align: justify;
+}
+.section_right
+{
+    margin-right: 0; margin-left: auto; width: 30%;
+    background-color: white;
+    padding: 40px
+}
+
+.bigTitle
+{
+    color: teal;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+hr 
+{
+    height: 1px;
+    border-width: 0;
+    background-color: #DEE0E1;
+    width: auto;
+    margin-left: 0;
+}
+
+.topicTagsWrapper {display: flex;}
+.topicWrapper { margin-bottom: 40px;}
+.topicTags
+{
+    height: auto;
+    padding: 4px 6px 4px 6px;
+    font-size: 14px;
+    color: rgb(112, 112, 112);
+    margin-right: 4px;
+    background-color: #F7F7F8;
+}
+
+#footer
+{
+    height: 30px;
+    background-color: #010101;
+    color: white;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.subTitle
+{
+    color: teal;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.letters
+{
+    color: #2058aa;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+input[type="button"] 
+{ 
+    outline: none;
+}
+
+table {table-layout: fixed; width: 60%; border: 1px solid rgb(0, 50, 126); }
+td, tr {border: 1px solid teal;}
+td {padding: 3px; text-align: left; font-size: 14px; font-weight: bold;}
+th {background-color: rgb(0, 50, 126); color: white;}
+
+.keypad_small
+{
+    background-color: #4F4E52;
+    color: white;
+    border: none;
+    padding: 3px 10px;
+    border-radius: 2px 2px 6px 6px;
+}
+
+.keypad_alpha
+{
+    background-color:  #4b4197;
+    color: white;
+    border: none;
+    padding: 3px 10px;
+    border-radius: 4px 4px 10px 10px;
+    font-family: casio_bold;
+}
+
+.keypad_ac
+{
+    background-color:rgb(255, 106, 0);
+    color: #212121;
+    border: none;
+    padding: 3px 10px;
+    border-radius: 4px 4px 10px 10px;
+    font-family: casio_bold;
+}
+
+.keypad_white
+{
+    background-color: rgb(219, 219, 219);
+    color: #212121;
+    border: none;
+    padding: 3px 10px;
+    width: 45px;
+    border-radius: 4px 4px 10px 10px;
+    font-weight: bold;
+}
+
+.screen
+{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #AAB77B; 
+    border-style: inset; 
+    border-radius: 6px;
+    font-size: 18px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a
+{
+    font-family: roboto;
+    color:  rgb(22, 83, 175);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {color: teal; }
+
+#related {font-weight: normal;}
