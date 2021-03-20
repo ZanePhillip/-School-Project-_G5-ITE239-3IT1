@@ -36,9 +36,6 @@ body {
     padding: 20px;
   }
 
-  .nav {
-      
-  }
   
   /* Style the list inside the menu */
   nav ul {
@@ -49,8 +46,8 @@ body {
   article {
     float: left;
     padding: 20px;
-    width: 70%;
-    background-color: #f1f1f1;
+    width: auto;
+    background-color: transparent;
     height: auto; /* only for demonstration, should be removed */
   }
   
