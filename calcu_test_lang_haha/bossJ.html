@@ -1,0 +1,157 @@
+<!-- RILLERA, RALPH LAWRENCE DV => ITE308 Day 12 Table Layout-->
+<html> 
+   <head> 
+      <meta charset="utf-8"/>
+      <link rel="stylesheet" href="styles/table_layout.css" />
+      <title>Programmer's Calcu</title>
+   </head> 
+<body> 
+   <div id="main">
+      <div id="content">
+         <table border="1"> 
+            <tr>
+               <td id="logo">BossJ</td><!-- CASIO-->
+               <td rowspan="3" colspan="4"><div id="solar_panel"></div></td>
+            </tr>
+            <tr>
+               <td id="model">fx-991EX</td>
+            </tr>
+            <tr>              
+               <td id="brand">Group5</td><!--PROGRAMR-->
+            </tr>
+            <tr> 
+               <td colspan="5">
+                  <span id="indicator">
+                     <span id="shift_indicator"></span>
+                     <span id="alpha_indicator"></span>
+                  </span>
+                  <input type="text" id="display_field" autofocus/>
+               </td> 
+            </tr>
+            <tr style="text-align: center;">
+               <td><input class="keypad_shift" type="button" value="SHFT" onclick="ShiftOn()"/> </td>  
+               <td><input class="keypad_alpha" type="button" value="ALP" onclick="AlphaOn()"/> </td>
+               <td><input class="keypad_small" type="button" value="min" onclick="WriteScreen('min(')"/> </td>
+               <td><input class="keypad_small" type="button" value="max" onclick="WriteScreen('max(')"/> </td> 
+               <td><input class="keypad_small" type="button" value="," onclick="WriteScreen(',')""/> </td>  
+            </tr> 
+            <tr>
+               <td class="keypad_label_dual">Tan</td>
+               <td class="keypad_label_dual">Log(x)</td>
+               <td class="keypad_label_dual">Pow(x,y)</td>
+               <td class="keypad_label_dual">Trunc</td>
+               <td class="keypad_label_dual">PI</td>
+            </tr>
+            <tr style="text-align: center;">
+               <td><input class="keypad_small" type="button" value="tan" onclick="WriteScreen('tan(')"/> </td>  
+               <td><input class="keypad_small" type="button" value="log" onclick="WriteScreen('log(')"/> </td>
+               <td><input class="keypad_small" type="button" value="pow" onclick="WriteScreen('pow(')"/> </td>
+               <td><input class="keypad_small" type="button" value="trn" onclick="WriteScreen('trn(')"/> </td> 
+               <td><input class="keypad_small" type="button" value="&pi;" onclick="GetPI()"/> </td>  
+            </tr> 
+            <tr>
+               <td>
+                  <span class="keypad_label_special">A</span>
+                  <span class="keypad_label_dual">Rnd</span>
+               </td>
+               <td>
+                  <span class="keypad_label_special">B</span>
+                  <span class="keypad_label_dual">Exp</span>
+               </td>
+               <td>
+                  <span class="keypad_label_special">C</span>
+                  <span class="keypad_label_dual">Abs</span>
+               </td>
+               <td>
+                  <span class="keypad_label_special">D</span>
+                  <span class="keypad_label_dual">Sine</span>
+               </td>
+               <td>
+                  <span class="keypad_label_special">E</span>
+                  <span class="keypad_label_dual">Cos</span>
+               </td>
+            </tr>
+            <tr style="text-align: center;">
+               <td><input class="keypad_small" type="button" value="&asymp;" onclick="AOrRand()"/> </td>  
+               <td><input class="keypad_small" type="button" value="exp" onclick="BOrExp()"/> </td>
+               <td><input class="keypad_small" type="button" value="abs" onclick="COrAbs()"/> </td>
+               <td><input class="keypad_small" type="button" value="sin" onclick="DOrSine()"/> </td> 
+               <td><input class="keypad_small" type="button" value="cos" onclick="EOrCos()"/> </td>  
+            </tr> 
+            <tr>
+               <td class="keypad_label">SQRT</td>
+               <td class="keypad_label">LESS</td>
+               <td class="keypad_label">GREATER</td>
+               <td class="keypad_label">%</td>
+               <td class="keypad_label">DEC</td>
+            </tr>
+            <tr style="text-align: center;">
+               <td><input class="keypad_small" type="button" value="&radic;x" onclick="WriteScreen('\u23b7(')"/> </td>  
+               <td><input class="keypad_small" type="button" value="&lt;" onclick="WriteScreen('<')"/> </td>
+               <td><input class="keypad_small" type="button" value="&gt;" onclick="WriteScreen('>')"/> </td>
+               <td><input class="keypad_small" type="button" value="(" onclick="DecToPct()"/> </td> 
+               <td><input class="keypad_small" type="button" value=")" onclick="PctToDec()"/> </td>  
+            </tr>
+            <tr>
+               <td class="keypad_label">CONST</td>
+               <td class="keypad_label">CONV</td>
+               <td class="keypad_label">Limit</td>
+               <td class="keypad_label">nPr</td>
+               <td class="keypad_label">CLR ALL</td>
+            </tr>
+            <tr> 
+               <td><input class="keypad numeric" type="button" value="7" onclick="WriteScreen('7')"/> </td> 
+               <td><input class="keypad numeric" type="button" value="8" onclick="WriteScreen('8')"/> </td> 
+               <td><input class="keypad numeric" type="button" value="9" onclick="WriteScreen('9')"/> </td>   
+               <td><input class="keypad special" type="button" value="DEL" onclick="DelSlice()"/> </td>
+               <td><input class="keypad special" type="button" value="AC" onclick="ClearScreen()"/> </td>
+            </tr> 
+            <tr>
+               <td class="keypad_label">MATRIX</td>
+               <td class="keypad_label">VECTOR</td>
+               <td class="keypad_label">HELP</td>
+               <td class="keypad_label_special">GCD</td>
+               <td class="keypad_label_special">LCM</td>
+            </tr>
+            <tr> 
+               <td><input class="keypad numeric" type="button" value="4" onclick="WriteScreen('4')"/> </td> 
+               <td><input class="keypad numeric" type="button" value="5" onclick="WriteScreen('5')"/> </td> 
+               <td><input class="keypad numeric" type="button" value="6" onclick="SixOrHelp()"/> </td> 
+               <td><input class="keypad operator" type="button" value="&times;" onclick="WriteScreen('\u00d7')"/> </td>
+               <td><input class="keypad operator" type="button" value="&divide;" onclick="WriteScreen('\u00f7')"/> </td> 
+            </tr> 
+            <tr>
+               <td class="keypad_label">STAT</td>
+               <td class="keypad_label">CMPLX</td>
+               <td class="keypad_label">DISTR</td>
+               <td class="keypad_label_special">Ceil</td>
+               <td class="keypad_label_special">Floor</td>
+            </tr>
+            <tr> 
+               <td><input class="keypad numeric" type="button" value="1" onclick="WriteScreen('1')"/> </td> 
+               <td><input class="keypad numeric" type="button" value="2" onclick="WriteScreen('2')"/> </td> 
+               <td><input class="keypad numeric" type="button" value="3" onclick="WriteScreen('3')"/> </td> 
+               <td><input class="keypad operator" type="button" value="+" onclick="PlusOrCeil()"/> </td> 
+               <td><input class="keypad operator" type="button" value="-" onclick="DifOrFloor()"/> </td>
+            </tr> 
+            <tr>
+               <td class="keypad_label">RESET</td>
+               <td class="keypad_label">Ran#</td>
+               <td class="keypad_label_special">=</span></td>
+               <td class="keypad_label_special">Mod</td>
+               <td class="keypad_label_special">Neg</td>
+            </tr>
+            <tr> 
+               <td><input class="keypad numeric" type="button" value="0" onclick="ResetOrZero()"/> </td>
+               <td><input class="keypad numeric" type="button" value="&bull;" onclick="DotOrRandom()"/> </td>  
+               <td><input class="keypad numeric" type="button" value="=" onclick="EvalOrEqual()"/> </td>  
+               <td><input class="keypad operator" type="button" value="%" onclick="WriteScreen('%')"/> </td>
+               <td><input class="keypad operator" type="button" value="!" onclick="WriteScreen('!')"/> </td>
+            </tr> 
+         </table> 
+      </div>
+   </div>
+   <!-- <script src="calcu.js"></script>  -->
+   <script src="table_layout.js"></script>
+</body> 
+</html> 

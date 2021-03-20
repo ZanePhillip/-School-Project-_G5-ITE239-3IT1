@@ -1,0 +1,261 @@
+@font-face
+{
+    font-family: casio;
+    src: url('eurostile.woff');
+}
+@font-face
+{
+    font-family: casio_bold;
+    src: url('EUROSTIB.ttf');
+}
+
+@font-face
+{
+    font-family: roboto;
+    src: url('Roboto-Regular.ttf');
+}
+
+body
+{
+    margin: 0;
+    font-family: casio;
+}
+
+table
+{
+    /* border: 2px solid #161616; */
+    border: none;
+    border-radius: 10px;
+    padding: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    table-layout: fixed;
+}
+
+td, th, tr
+{
+    border: none;
+    text-align: center;
+}
+
+.title
+{ 
+    margin-bottom: 10px; 
+    text-align:center; 
+    width: 210px; 
+    color:green; 
+    border: solid black 2px; 
+} 
+
+input[type="button"] 
+{ 
+    outline: none;
+}
+
+input[type="text"] 
+{ 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #AAB77B; 
+    border-style: inset; 
+    font-size: 22px;
+    padding-top: 34px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    width:100%;
+    outline: none;
+} 
+
+#indicator
+{
+    display: flex;
+    position: absolute;
+    margin-left: 12px;
+    margin-top: 2px;
+}
+#shift_indicator, #alpha_indicator
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    margin-right: 10px;
+}
+
+#content
+{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-image: url('skin.png');
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 8px;
+    border-radius: 14px;
+    box-shadow: 2px 4px 10px #1f1f1f;
+}
+
+#logo
+{
+    color: white;
+    font-weight: bold;
+    font-family: casio_bold;
+    font-size: 22px;
+}
+
+#model
+{
+    font-family: casio;
+    color: white;
+    font-size: 10px;
+}
+
+#brand
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(168, 0, 84);
+    letter-spacing: 0.1em;
+}
+
+#solar_panel
+{
+    background-image: url('solarpanel.png');
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-color: #2D1D1D;
+    width: 75%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 0;
+    border-radius: 6px;
+    border-top: 2px solid #2e2e2e;
+    border-right: 2px solid rgb(75, 75, 75);
+}
+
+.keypad
+{
+    border: none;
+    font-family: casio_bold;
+    border-radius: 6px 6px 12px 12px;
+    box-shadow: 0 0 10px rgb(15, 15, 15);
+    width: 100%;
+    height: 28px;
+    font-size: 16px;
+}
+
+.keypad_small
+{
+    border: none;
+    font-family: roboto;
+    border-radius: 4px 4px 8px 8px;
+    box-shadow: 0 0 10px rgb(15, 15, 15);
+    width: 80%;
+    height: 24px;
+    font-size: 13px;
+    background-color: #4F4E52;
+    color: white;
+    padding-bottom: 4px;
+    text-align: center;
+}
+
+.keypad_small:active
+{
+    background-color: #3d3c41;
+}
+
+.numeric
+{
+    background-color: rgb(219, 219, 219);
+    color: #212121;
+}
+
+.numeric:active
+{
+    background-color: rgb(180, 180, 180);
+    color: #212121;
+}
+
+.operator
+{
+    background-color: #4b4197;
+    color: white;
+}
+
+.special
+{
+    background-color: chocolate;
+    color: #212121;
+}
+
+.special:active
+{
+    background-color: rgb(202, 89, 8);
+}
+
+.keypad_label
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    color: rgb(255, 183, 0);
+    text-align: center;
+    height: auto;
+}
+
+.keypad_label_dual
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    color: rgb(255, 183, 0);
+    text-align: center;
+    height: auto;
+}
+
+.keypad_label_special
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    color: #6050d4;
+    text-align: center;
+    height: auto;
+}
+
+.keypad_shift
+{
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    font-family: roboto;
+    border-radius: 4px 4px 8px 8px;
+    box-shadow: 0 0 10px rgb(15, 15, 15);
+    text-align: center;
+    width: 80%;
+    height: 24px;
+    font-size: 10px;
+    background-color: rgb(255, 208, 0);
+    color: #212121;
+    padding-bottom: 4px;
+    font-weight: bold;
+}
+
+.keypad_shift:active {background-color: rgb(224, 165, 0);}
+
+.keypad_alpha
+{
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    font-family: roboto;
+    border-radius: 4px 4px 8px 8px;
+    box-shadow: 0 0 10px rgb(15, 15, 15);
+    text-align: center;
+    width: 80%;
+    height: 24px;
+    font-size: 10px;
+    background-color: #4b4197;
+    color: white;
+    padding-bottom: 4px;
+    font-weight: bold;
+}
+
+.keypad_alpha:active, .operator:active { background-color: #3c347a;}
