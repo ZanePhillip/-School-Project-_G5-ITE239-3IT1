@@ -1,27 +1,20 @@
 @font-face
 {
     font-family: casio;
-    src: url('eurostile.woff');
+    src: url('../fonts/eurostile.woff');
 }
 @font-face
 {
     font-family: casio_bold;
-    src: url('EUROSTIB.ttf');
+    src: url('../fonts/EUROSTIB.ttf');
 }
 
 @font-face
 {
     font-family: roboto;
-    src: url('Roboto-Regular.ttf');
+    src: url('../fonts/Roboto-Regular.ttf');
 }
 
-body
-{
-    margin: 0;
-    font-family: roboto;
-    color: #313131;
-    background-color: rgb(214, 214, 214);
-}
 
 #header
 {

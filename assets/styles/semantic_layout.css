@@ -1,42 +1,18 @@
 @font-face
 {
     font-family: casio;
-    src: url('eurostile.woff');
+    src: url('../fonts/eurostile.woff');
 }
 @font-face
 {
     font-family: casio_bold;
-    src: url('EUROSTIB.ttf');
+    src: url('../fonts/EUROSTIB.ttf');
 }
 
 @font-face
 {
     font-family: roboto;
-    src: url('Roboto-Regular.ttf');
-}
-
-body
-{
-    margin: 0;
-    font-family: roboto;
-    color: #313131;
-    background-color: rgb(214, 214, 214);
-}
-
-header
-{
-    font-family: casio_bold;
-    padding: 8px 8px 8px 75px;
-    background-color: #00327E;
-    color: white;
-    height: 60px;
-}
-
-nav
-{
-    background-color: #010101;
-    color: white;
-    padding: 0 8px 0 115px;
+    src: url('../fonts/Roboto-Regular.ttf');
 }
 
 #logoText
@@ -70,8 +46,8 @@ nav
 
 li {padding-top: 6px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
 table {table-layout: fixed; width: 100%; border: 1px solid rgb(0, 50, 126); }
-td, tr {border: 1px solid teal;}
-td {padding: 3px; text-align: left; font-size: 14px; font-weight: bold;}
+td, tr {border: 5px solid teal;}
+td {padding: 10px; text-align: left; font-size: 14px; font-weight: bold;}
 th {background-color: rgb(0, 50, 126); color: white;}
 .key
 {

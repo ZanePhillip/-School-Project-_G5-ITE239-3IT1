@@ -77,18 +77,24 @@ input[type="text"]
     margin-right: 10px;
 }
 
+#main
+{
+    padding-top: 300px;
+    align-items: center;
+}
+
 #content
 {
     width: 20%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     background-image: url('../images/skin.png');
     background-repeat: repeat;
     background-size: cover;
-    padding: 8px;
+    padding: 14px;
     border-radius: 14px;
     box-shadow: 2px 4px 10px #1f1f1f;
+    height: 50vh;
 }
 
 #logo
@@ -120,7 +126,7 @@ input[type="text"]
     background-size: contain;
     background-repeat: repeat-x;
     background-color: #2D1D1D;
-    width: 75%;
+    width: 60%;
     height: 40px;
     margin-left: auto;
     margin-right: 0;
@@ -135,7 +141,7 @@ input[type="text"]
     font-family: casio_bold;
     border-radius: 6px 6px 12px 12px;
     box-shadow: 0 0 10px rgb(15, 15, 15);
-    width: 100%;
+    width: 80%;
     height: 28px;
     font-size: 16px;
 }
