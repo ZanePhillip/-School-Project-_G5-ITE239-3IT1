@@ -79,7 +79,7 @@ input[type="text"]
 
 #main
 {
-    padding-top: 300px;
+    padding-top: 200px;
     align-items: center;
 }
 
@@ -91,10 +91,10 @@ input[type="text"]
     background-image: url('../images/skin.png');
     background-repeat: repeat;
     background-size: cover;
-    padding: 14px;
-    border-radius: 14px;
+    padding: 8px;
+    border-radius: 10px;
     box-shadow: 2px 4px 10px #1f1f1f;
-    height: 50vh;
+    height: 57vh;
 }
 
 #logo
@@ -159,6 +159,7 @@ input[type="text"]
     color: white;
     padding-bottom: 4px;
     text-align: center;
+    margin-top: 10px;
 }
 
 .keypad_small:active
@@ -201,7 +202,8 @@ input[type="text"]
     font-size: 8px;
     color: rgb(255, 183, 0);
     text-align: center;
-    height: auto;
+    height: 20px;
+    margin-top: 10px;
 }
 
 .keypad_label_dual
@@ -210,7 +212,8 @@ input[type="text"]
     font-size: 9px;
     color: rgb(255, 183, 0);
     text-align: center;
-    height: auto;
+    height: 20px;
+    margin-top: 10px;
 }
 
 .keypad_label_special
@@ -219,7 +222,8 @@ input[type="text"]
     font-size: 9px;
     color: #6050d4;
     text-align: center;
-    height: auto;
+    height: 10px;
+    margin-top: 10px;
 }
 
 .keypad_shift
@@ -237,6 +241,7 @@ input[type="text"]
     color: #212121;
     padding-bottom: 4px;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .keypad_shift:active {background-color: rgb(224, 165, 0);}
@@ -256,6 +261,7 @@ input[type="text"]
     color: white;
     padding-bottom: 4px;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .keypad_alpha:active, .operator:active { background-color: #3c347a;}
