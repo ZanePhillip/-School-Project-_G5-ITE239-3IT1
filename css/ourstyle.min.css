@@ -383,3 +383,28 @@ footer .copyright {
   font-size: 16px;
   padding: 25px 35px;
 }
+
+h3.section-title{
+  font-size: xx-large;
+}
+
+.col{
+  margin-bottom: 30px;
+}
+
+p.card-text{
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: large;
+}
+
+.card-body{
+  background-color: #D6D6D6;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.btn-info{
+  margin-left: 70px;
+  margin-top: 300px;
+
+}
