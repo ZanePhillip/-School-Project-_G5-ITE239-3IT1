@@ -6,7 +6,7 @@ body {
 }
 
 a {
-    color: yellowgreen;
+    color: black;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -14,7 +14,7 @@ a {
 
 a:hover,
 a:focus {
-    color: forestgreen;
+    color: gray;
 }
 
 p {
@@ -27,8 +27,8 @@ header {
     width: 100%;
     min-height: auto;
     text-align: center;
-    color: #fff;
-    background-image: url('../images/header.jpg');
+    color: black;
+    background-image: url('../images/activities-bg.png');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -41,6 +41,7 @@ header .header-content {
     width: 100%;
     padding: 100px 15px 70px;
     text-align: center;
+    
 }
 
 header .header-content .header-content-inner h1 {
@@ -95,13 +96,13 @@ header .header-content .header-content-inner p {
 }
 
 .intro {
-	color: #fff;
-    background-color: yellowgreen;
+	color: black;
+    background-color: white;
     padding: 70px 0;
     text-align: center;
 }
 .text-light {
-    color: rgba(255,255,255,.7);
+    color: black;
 }
 
 .navbar-default {
@@ -111,6 +112,8 @@ header .header-content .header-content-inner p {
     -moz-transition: all .35s;
     transition: all .35s;
 }
+
+
 
 .navbar-default .navbar-header .navbar-brand {
     color: yellowgreen;
@@ -128,7 +131,7 @@ header .header-content .header-content-inner p {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: yellowgreen;
+    color: grey;
 }
 
 .navbar-default .nav > li.active>a,
@@ -176,7 +179,7 @@ header .header-content .header-content-inner p {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         letter-spacing: 0;
-        color: yellowgreen;
+        color: grey;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -249,9 +252,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: yellowgreen;
+    border-color: grey;
     color: #fff;
-    background-color: yellowgreen;
+    background-color: rgb(123, 123, 123);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -263,9 +266,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: limegreen;
+    border-color: gray;
     color: #fff;
-    background-color: limegreen;
+    background-color: black;
 }
 
 .btn-primary:active,
