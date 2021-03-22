@@ -309,6 +309,7 @@ fieldset[disabled] .btn-primary.active {
 .btn {
     border-radius: 300px;
     text-transform: uppercase;
+    margin-left: 50px;
 }
 
 .btn-lg {
