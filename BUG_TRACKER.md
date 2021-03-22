@@ -10,3 +10,4 @@ Bug001	   |Mar 21, 2021   |`Fixed`	    |Uncaught TypeError : Cannot set property
 
 
 
+$\color{#00ff00}{readme}$
