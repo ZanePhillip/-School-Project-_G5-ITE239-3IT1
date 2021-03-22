@@ -76,6 +76,7 @@ header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
         max-width: 1000px;
+        align-items: center;
     }
 
 	header .header-content .header-content-inner h1 {

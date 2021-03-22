@@ -3,12 +3,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Programmer's Calculator</title>
+    <title>Binary Converter</title>
 
     <link href="assets/styles/bootstrap.min.css" rel="stylesheet">
     <link href="assets/styles/calculator.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"><!--Kuya Kyan-->
+
+    <!--Converter-->
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1">
+    <link rel="stylesheet" type="text/css" href="converter/base2_converter.css">
+    <link rel="stylesheet" type="text/css" href="converter/tooltip.css">
+    <script src="converter/tooltip.js"></script>
+    <script src="converter/jquery.min.js"></script>
 
 </head>
 
@@ -60,10 +69,47 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 style="color: black;"><b>Binary Converter</b></h1>
-                <br>
-                <p style="color: black;"><b>Converter Convert the Verter Binary Bi the Nary</b></p>
-                <a href="#" class="btn btn-primary btn-lg">TRY NOW!</a>
+<h1><b>Binary Converter</b></h1>
+<p style="color: black;"><b>Binary, Hex, Decimal, Octal converter. Enter the code, choose conversion parameters, and press the Convert button</b></p>
+
+
+              <div id="converter-main">
+                <form id="forms" onsubmit="return false">
+                    <!-- INPUTS AREA -->
+                    <div id="inputs">
+                        <input type="text" id="inputN" value="">
+                        <select id="convertOptions">
+                            <option>BinToHex</option>
+                            <option>BinToDec</option>
+                            <option>BinToOct</option>
+                            <option>BinToStr</option>
+                            <option>HexToBin</option>
+                            <option>DecToBin</option>
+                            <option>OctToBin</option>
+                            <option>StrToBin</option>
+                        </select>
+                        <button id="convertBtn" onclick="Convert()">Convert</button>
+                    </div>
+        
+                    <!-- OUTPUT AREA -->
+                    <div id="outputs">
+                        <textarea value="" name="output" id="output" readonly></textarea>
+                        <div id="output-buttons">
+                            <div class="tooltip">
+                                <button id="copyBtn" onclick="CopyToClipBoard()" onmouseout="ResetTooltip()">
+                                    <span class="tooltiptext" id="toolTipMain">Copy To Clipboard</span>
+                                    Copy
+                                </button>
+                            </div>
+                            <button id="clearBtn" onclick="ClearOutput()">Clear</button>
+                            <button type="reset" id="resetBtn">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+            <!-- CALCULATION LOGIC CODE -->
+            <script src="converter/base2_converter.js"></script>
             </div>
         </div>
     </header>

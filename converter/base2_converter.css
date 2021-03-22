@@ -4,7 +4,8 @@
 */
 
 /* 
-  NOTE : Guys, paki add niyo name niyo dito pag gusto nyo i-edit itong code..
+  NOTE : Guys, paki add niyo name niyo dito pag gusto nyo i-edit itong code.. 
+  Edited na master unti lng -z
 */
 
 
@@ -13,7 +14,8 @@
 
 #converter-main
 {
-    min-width: 960px;
+    min-width: 500px;
+    margin-left: 25%;
 }
 
 #convertOptions, #inputN, #convertBtn, #outputBtn, #output
@@ -22,16 +24,26 @@
     color: #111111;
 }
 
+#inputs
+{
+    border-radius: 15px;
+}
 #inputs, #outputs
 {
     display: flex;
-    width: 35%;
-    min-width: 485px;
+    width: 50%;
+    min-width: 550px;
     padding: 14px;
     border: 1px solid #AEA79F;
+    background-color: white;
+    
 }
 
-#outputs { margin-top: 2px; }
+#outputs 
+{
+     margin-top: 5px; 
+    border-radius: 15px;
+}
 
 #output-buttons
 {
@@ -47,7 +59,7 @@
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 2px solid #FF6634;
+    border-bottom: 2px solid gray;
     font-weight: bold;
     outline: none;
     margin-left: 0;
@@ -79,7 +91,7 @@
 {
     margin-right: 0;
     margin-left: auto;
-    background-color: #FF6634;
+    background-color: gray;
     color: white;
     border: none;
     padding: 6px 12px;
@@ -110,7 +122,7 @@
     margin-bottom: 6px;
     min-width: 72px;
     width: 72px;
-    background-color: #FF6634;
+    background-color: gray;
     color: white;
     border: none;
     padding: 6px 12px;
