@@ -1,9 +1,9 @@
-# BUG TRACKER
+# ISSUE TRACKER
 
-**Description**:  Listahan ng mga bugs :)
+**Description**:  Listahan ng mga bugs / issues :)
 
-BUG ID     |DATE           |STATUS	    |DESCRIPTION
+ISSUE ID   |DATE           |STATUS	    |DESCRIPTION
 :----------|:-------------:|:----------:|:----------
-Bug001	   |Mar 21, 2021   |`Fixed`   	|Uncaught TypeError : Cannot set property 'innerHTML' of null. @assets/js/calcu.js:115:46
-Bug002     |Mar 22, 2021   |Ignore      |Ayaw mag accept ng input. -> It's not a BUG, it's FEATURE hahahah
+i001	     |Mar 21, 2021   |`Fixed`   	|Uncaught TypeError : Cannot set property 'innerHTML' of null. @assets/js/calcu.js:115:46
+i002       |Mar 22, 2021   |Ignore      |Ayaw mag accept ng input. -> It's not a BUG, it's FEATURE hahahah
 
