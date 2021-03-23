@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -71,45 +73,96 @@
             <div class="header-content-inner">
 <h1><b>Binary Converter</b></h1>
 <p style="color: black;"><b>Binary, Hex, Decimal, Octal converter. Enter the code, choose conversion parameters, and press the Convert button</b></p>
-
-
-              <div id="converter-main">
-                <form id="forms" onsubmit="return false">
-                    <!-- INPUTS AREA -->
-                    <div id="inputs">
-                        <input type="text" id="inputN" value="">
-                        <select id="convertOptions">
-                            <option>BinToHex</option>
-                            <option>BinToDec</option>
-                            <option>BinToOct</option>
-                            <option>BinToStr</option>
-                            <option>HexToBin</option>
-                            <option>DecToBin</option>
-                            <option>OctToBin</option>
-                            <option>StrToBin</option>
-                        </select>
-                        <button id="convertBtn" onclick="Convert()">Convert</button>
-                    </div>
-        
-                    <!-- OUTPUT AREA -->
-                    <div id="outputs">
-                        <textarea value="" name="output" id="output" readonly></textarea>
-                        <div id="output-buttons">
-                            <div class="tooltip">
-                                <button id="copyBtn" onclick="CopyToClipBoard()" onmouseout="ResetTooltip()">
-                                    <span class="tooltiptext" id="toolTipMain">Copy To Clipboard</span>
-                                    Copy
-                                </button>
-                            </div>
-                            <button id="clearBtn" onclick="ClearOutput()">Clear</button>
-                            <button type="reset" id="resetBtn">Reset</button>
+            
+                <!-- GUYS, Pag ililipat nyo itong converter sa ibang page, start nyo icopy sa #BEGIN_COPY upto #END_COPY -->
+                <!-- #BEGIN_COPY -->
+                <div id="converter-main">
+                    <form id="forms" onsubmit="return false">
+                        <!-- INPUTS AREA -->
+                        <div id="inputs">
+                            <input type="text" id="inputN" value="">
+                            <select id="convertOptions">
+                                <option disabled>-- Base N --</option>
+                                <option>Bin To Hex</option>
+                                <option>Bin To Dec</option>
+                                <option>Bin To Oct</option>
+                                <option>Bin To Str</option>
+                                <option>Hex To Bin</option>
+                                <option>Dec To Bin</option>
+                                <option>Oct To Bin</option>
+                                <option>Str To Bin</option>
+                                <option disabled>-- Length --</option>
+                                <option>MM To Cm</option>
+                                <option>Cm To MM</option>
+                                <option>In To Cm</option>
+                                <option>Cm To In</option>
+                                <option>Ft To M</option>
+                                <option>M To Ft</option>
+                                <option>Km To M</option>
+                                <option>M To Km</option>
+                                <option disabled>-- Temp --</option>
+                                <option>C To F</option>
+                                <option>C To K</option>
+                                <option>F To C</option>
+                                <option>F To K</option>
+                                <option>K To C</option>
+                                <option>K To F</option>
+                                <option disabled>-- Volume --</option>
+                                <option>mL To L</option>
+                                <option>mL To Fl</option>
+                                <option>L To mL</option>
+                                <option>L To Fl</option>
+                                <option>Fl To mL</option>
+                                <option>Fl To L</option>
+                                <option disabled>-- Time --</option>
+                                <option>Sec To Min</option>
+                                <option>Sec To Hr</option>
+                                <option>Min To Sec</option>
+                                <option>Min To Hr</option>
+                                <option>Hr To Sec</option>
+                                <option>Hr To Min</option>
+                            </select>
+                            <button id="convertBtn" onclick="Convert()">Convert</button>
                         </div>
-                    </div>
-                </form>
-            </div>
+
+                        <!-- OUTPUT AREA -->
+                        <div id="outputs">
+                            <textarea value="" name="output" id="output" readonly></textarea>
+                            <div id="output-buttons">
+                                <div class="tooltipWrapper">
+                                    <button id="copyBtn" onclick="CopyToClipBoard()" onmouseout="ResetTooltip()">
+                                        <span class="tooltipWrappertext" id="toolTipMain">Copy To Clipboard</span>
+                                        Copy
+                                    </button>
+                                </div>
+                                <!-- <button id="clearBtn" onclick="ClearOutput()">Clear</button> -->
+                                <div class="tooltipWrapper">
+                                    <button id="clearBtn" onclick="ClearOutput()">
+                                        <span class="tooltipWrappertext" id="toolTipMain">Clear Output</span>
+                                        Clear
+                                    </button>
+                                </div>
+                                <!-- <button type="reset" id="resetBtn">Reset</button> -->
+                                <div class="tooltipWrapper">
+                                    <button type="reset" id="resetBtn">
+                                        <span class="tooltipWrappertext" id="toolTipMain">Reset Inputs And Output</span>
+                                        Reset
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- CALCULATION LOGIC CODE -->
+                <script src="converter/extensions.js"></script>
+                <script src="converter/length.js"></script>
+                <script src="converter/base2.js"></script>
+                <script src="converter/temp.js"></script>
+                <script src="converter/volume.js"></script>
+                <script src="converter/time.js"></script>
+                <script src="converter/converter_manager.js"></script>
+                <!-- #END_COPY -->
         
-            <!-- CALCULATION LOGIC CODE -->
-            <script src="converter/base2_converter.js"></script>
             </div>
         </div>
     </header>
@@ -169,3 +222,4 @@
     <!-- Custom Javascript -->
     <script src="assets/js/custom.js"></script>
 </body>
+</html>
