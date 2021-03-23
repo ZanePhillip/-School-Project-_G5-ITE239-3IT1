@@ -1,0 +1,129 @@
+/*
+    * Contributor : Rillera, Ralph Lawrence DV
+    * Date : March 21, 2021 
+*/
+
+/* 
+  NOTE : Guys, paki add niyo name niyo dito pag gusto nyo i-edit itong code.. 
+  Edited na master unti lng -z
+*/
+
+
+
+/* PARENT CONTAINERS / WRAPPERS */
+
+
+#converter-main
+{
+    min-width: 960px;
+}
+
+#convertOptions, #inputN, #convertBtn, #outputBtn, #output
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #111111;
+}
+
+#inputs, #outputs
+{
+    display: flex;
+    width: 38%;
+    min-width: 500px;
+    padding: 14px;
+    border: 1px solid #AEA79F;
+    border-radius: 3px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#outputs { margin-top: 2px; }
+
+#output-buttons
+{
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right;
+}
+
+/* FORM ELEMENTS / UI CONTROLS */
+
+#inputN
+{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #808080;
+    font-weight: bold;
+    outline: none;
+    margin-left: 0;
+    width: 270px;
+    padding-top: 4px;
+    padding-bottom: 0;
+    margin-right: auto;
+}
+
+#inputN:focus { border-bottom: 2px solid #FF6634; }
+
+#convertOptions
+{
+    margin-left: auto;
+    margin-right: auto;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 3px;
+    border: 1px solid #CCCCCC;
+    background: url('expand.png') 96% / 15% no-repeat #EEEEEE;
+    font-weight: bold;
+    outline: none;
+    width: 110px;
+    padding: 6px 20px 6px 4px;
+}
+
+#convertOptions::-ms-expand { display: none; }
+
+#convertBtn
+{
+    margin-right: 0;
+    margin-left: auto;
+    background-color: #FF6634;
+    color: white;
+    min-width: 72px;
+    width: 72px;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#convertBtn:hover, #outputBtn:hover, #copyBtn:hover, #clearBtn:hover, #resetBtn:hover  { background-color: #FF8135; }
+#convertBtn:active, #outputBtn:active, #copyBtn:active, #clearBtn:active, #resetBtn:active { background-color: #FF5137; }
+
+#output
+{
+    padding: 4px;
+    background: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    outline: none;
+    min-width: 392px;
+    min-height: 250px;
+    overflow: scroll;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+#clearBtn, #copyBtn, #resetBtn
+{
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 6px;
+    min-width: 72px;
+    width: 72px;
+    background-color: #FF6634;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    font-weight: bold;
+}
