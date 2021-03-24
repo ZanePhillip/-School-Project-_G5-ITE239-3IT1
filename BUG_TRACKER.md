@@ -10,3 +10,4 @@ i003       |Mar 23, 2021   |`Fixed`     |Nawawala yung copy button sa converter
 i004       |Mar 23, 2021   |`Fixed`     |Nawawala din yung tooltips
 i005       |Mar 23, 2021   |`Fixed`     |Hindi nag-uupdate yung title after magselect sa dropdown
 i006       |Mar 23, 2021   |`Fixed`     |Page error. Changed index.html's main content href from Post.html to proper links, also modified some texts to adopt to current pages.
+i007       |Mar 24, 2021   |Pending     |Conversion Method "Fl To mL" showing wrong header title. (Must display as "Volume Converter" not "Data Converter".
