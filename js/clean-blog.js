@@ -1,3 +1,15 @@
+/*
+    * Contributor : Kyan Paul D. Villaruz
+    * Date : March 21, 2021 
+*/
+
+/* NOTE : Guys, paki add niyo name niyo dito pag gusto nyo i-edit itong code..
+*
+*
+*
+*
+*
+*/
 (function($) {
   "use strict"; // Start of use strict
 

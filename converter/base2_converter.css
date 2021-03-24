@@ -4,12 +4,14 @@
 */
 
 /* 
-  NOTE : Guys, paki add niyo name niyo dito pag gusto nyo i-edit itong code..
+  NOTE : Guys, paki add niyo name niyo dito pag gusto nyo i-edit itong code.. 
+  Edited na master unti lng -z
 */
 
 
 
 /* PARENT CONTAINERS / WRAPPERS */
+
 
 #converter-main
 {
@@ -25,10 +27,14 @@
 #inputs, #outputs
 {
     display: flex;
-    width: 35%;
-    min-width: 485px;
+    width: 38%;
+    min-width: 500px;
     padding: 14px;
     border: 1px solid #AEA79F;
+    border-radius: 3px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #outputs { margin-top: 2px; }
@@ -47,15 +53,17 @@
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 2px solid #FF6634;
+    border-bottom: 2px solid #808080;
     font-weight: bold;
     outline: none;
     margin-left: 0;
-    width: 280px;
+    width: 270px;
     padding-top: 4px;
     padding-bottom: 0;
     margin-right: auto;
 }
+
+#inputN:focus { border-bottom: 2px solid #FF6634; }
 
 #convertOptions
 {
@@ -81,14 +89,16 @@
     margin-left: auto;
     background-color: #FF6634;
     color: white;
+    min-width: 72px;
+    width: 72px;
     border: none;
     padding: 6px 12px;
     border-radius: 3px;
     font-weight: bold;
 }
 
-#convertBtn:hover, #outputBtn:hover  { background-color: #FF8135; }
-#convertBtn:active, #outputBtn:active { background-color: #FF5137; }
+#convertBtn:hover, #outputBtn:hover, #copyBtn:hover, #clearBtn:hover, #resetBtn:hover  { background-color: #FF8135; }
+#convertBtn:active, #outputBtn:active, #copyBtn:active, #clearBtn:active, #resetBtn:active { background-color: #FF5137; }
 
 #output
 {

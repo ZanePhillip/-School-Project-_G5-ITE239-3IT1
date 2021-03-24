@@ -19,5 +19,5 @@ function CopyToClipBoard()
 function ResetTooltip()
 {
     var tooltip = document.getElementById("toolTipMain");
-    tooltip.innerHTML = "Copy to clipboard";
+    tooltip.innerHTML = "Copy To Clipboard";
 }
