@@ -15,4 +15,4 @@ i008       |Mar 24, 2021   |✔️ `Fixed`  |Reset button must also reset Header
 i009       |Mar 24, 2021   |⚠️ Pending  |Nasisira yung layout ng footer `<section class="intro">` pag niresize yung window.
 i010       |Mar 24, 2021   |⚠️ Pending  |Nasisira yung layout ng content `<div class="header-content-inner">` pag niresize yung window.
 i011       |Mar 24, 2021   |✔️ `Fixed`  |Page Not Found sa calculator `Shift + 6` button. Parang shortcut dapat yun sa about.html
-i012       |Mar 24, 2021   |⚠️ Pending  |Design flaws in `calculatorlaunch.html`. May mga texts/contents na hindi ata naisara yung closing tags nila. 
+i012       |Mar 24, 2021   |⚠️ Pending  |Design flaws in `calculatorlaunch.html`. May mga texts/contents na hindi ata naisara yung closing tags nila. May lumabas na `=====<<<<<HEAD====` ganun..     
