@@ -1,20 +1,3 @@
-/* 
-  NOTE : Guys, paki add niyo name niyo dito pag gusto nyo i-edit itong code.. 
-  *
-  *
-  *
-  *
-  *
-*/
-
-/*
-    * Contributors :
-    * Zane Phillip Y. Cera
-    * Ralph Lawrence DV Rillera
-    * Date : March 21, 2021 
-*/
-
-
 html,
 body {
     width: 100%;
@@ -48,13 +31,12 @@ header {
     min-height: auto;
     text-align: center;
     color: black;
-    background-image: url('../images/activities-bg.png');
+    background-image: url('../images/bmi.jpg');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    margin-bottom: 50px;
 }
 
 header .header-content {
@@ -79,8 +61,20 @@ header .header-content .header-content-inner p {
     color: rgba(255,255,255,.7);
 }
 
+/* BMI Layout starts here */
+header .main2{
+    position: absolute;
+    width: 80%;
+    top: 200px;
+    left: 150px;
+}
 
-
+header .main2 .content2 .resultIndex{
+    background-color: grey;
+    color: white;
+    margin-top: 5px;
+    
+}
 @media(min-width:768px) {
     header {
         min-height: 100%;
@@ -93,7 +87,6 @@ header .header-content .header-content-inner p {
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-
     }
 
     header .header-content .header-content-inner {
@@ -113,7 +106,6 @@ header .header-content .header-content-inner p {
         max-width: 80%;
         font-size: 18px;
     }
-    
 }
 
 .section-heading {
@@ -225,7 +217,7 @@ header .header-content .header-content-inner p {
 }
 
 .btn-default {
-    border-color: #fff;
+    border-color: white;
     color: #222;
     background-color: #fff;
     -webkit-transition: all .35s;
@@ -335,6 +327,8 @@ fieldset[disabled] .btn-primary.active {
     border-radius: 300px;
     text-transform: uppercase;
     margin-left: 50px;
+    margin-top: 5px;
+    border-color: gray;
 }
 
 .btn-lg {
@@ -369,4 +363,10 @@ img::-moz-selection {
 
 .bg-primary {
     background-color: yellowgreen;
+}
+
+.resultIndex
+{
+    border-radius: 10px;
+    border-color: black;
 }

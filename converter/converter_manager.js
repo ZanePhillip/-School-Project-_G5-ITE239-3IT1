@@ -58,7 +58,7 @@ $('#convertOptions').on("change", function()
     //
     // FOR VOLUME
     //
-    else if (Contains(selected, "mL")) 
+    else if (Contains(selected, "mL") || Contains(selected, "Fl")) 
     { 
         header.text(converterTypes[3]); 
     }
