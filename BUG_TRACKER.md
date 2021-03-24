@@ -1,6 +1,6 @@
 # ISSUE TRACKER
 
-**Description**:  Listahan ng mga bugs / issues 😺
+**Description**:  Listahan ng mga bugs / issues 🐞
 
 ISSUE ID   |DATE           |STATUS	    |DESCRIPTION
 :----------|:-------------:|:----------:|:----------
