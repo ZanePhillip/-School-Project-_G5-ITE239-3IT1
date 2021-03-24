@@ -63,6 +63,7 @@ $('#resetBtn').on('click', function()
 {
     $("#output").text("");
     $("#output").trigger("keyup");
+   $('#TitleH1').text("Data Converter");
 });
 
 
