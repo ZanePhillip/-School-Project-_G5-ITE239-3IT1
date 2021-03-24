@@ -2,7 +2,7 @@
     * Contributors :
     *
     * Villanueva, David
-    * 
+    * Cera, Zane Phillip
     * 
     *
     * March 21, 2021
@@ -74,6 +74,8 @@
     <header>
         <div class="main2">
             <div class="content2">
+              <h1 style="color: black; font-size: 100px; text-shadow: 5cm;" ><b>BMI Computer</b></h1>
+                <br>
                <table border="5">             
                   <tr> 
                      <td><input class="btn btn-dark" type="button" value="Reset" onclick="resetInputs()"/></td>
@@ -99,6 +101,7 @@
                     <td><input class="btn btn-dark" id="weightKG" type="number" min="0" oninput="weightOnPress(this.value)"/>&nbsp;&nbsp;&nbsp;<label>kg</label></td>
                     <td><input class="btn btn-dark" id="heightINCH" type="number" min="0" oninput="heightOnPress(this.value)"/>&nbsp;&nbsp;&nbsp;<label>in </td>
                     <td class="resultIndex">Your Minimum Calorie Intake should be <span><b id="resultMCI"></b></span></td>
+                    
                  </tr> 
                  <tr> 
                     <td><input class="btn btn-dark" id="weightGM" type="number" min="0" oninput="weightOnPress(this.value)"/>&nbsp;&nbsp;&nbsp;<label>gm</label></td>
@@ -108,7 +111,7 @@
                  <tr> 
                     <td><input class="btn btn-dark" id="weightOZ" type="number" min="0" oninput="weightOnPress(this.value)"/>&nbsp;&nbsp;&nbsp;<label>oz</label></td>
                     <td><input class="btn btn-dark" id="heightFT" type="number" min="0" oninput="heightOnPress(this.value)"/>&nbsp;&nbsp;&nbsp;<label>ft </td>
-                    <td class="resultIndex" id="resultAdvice"></td>
+                    <td class="resultIndex" id="resultAdvice">Health Routine Suggestion</td>
                  </tr> 
                </table> 
             </div>

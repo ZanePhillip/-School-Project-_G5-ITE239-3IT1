@@ -31,7 +31,7 @@ header {
     min-height: auto;
     text-align: center;
     color: black;
-    background-image: url('../images/activities-bg.png');
+    background-image: url('../images/bmi.jpg');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -70,8 +70,9 @@ header .main2{
 }
 
 header .main2 .content2 .resultIndex{
-    background-color: black;
+    background-color: grey;
     color: white;
+    margin-top: 5px;
 }
 
 @media(min-width:768px) {
@@ -216,7 +217,7 @@ header .main2 .content2 .resultIndex{
 }
 
 .btn-default {
-    border-color: black;
+    border-color: white;
     color: #222;
     background-color: #fff;
     -webkit-transition: all .35s;
@@ -326,6 +327,8 @@ fieldset[disabled] .btn-primary.active {
     border-radius: 300px;
     text-transform: uppercase;
     margin-left: 50px;
+    margin-top: 5px;
+    border-color: gray;
 }
 
 .btn-lg {
