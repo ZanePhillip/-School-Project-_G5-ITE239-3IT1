@@ -11,7 +11,7 @@ const heightFT = document.getElementById("heightFT");
 const resultBMI = document.getElementById("resultBMI");
 const resultMCI = document.getElementById("resultMCI");
 const resultMCB = document.getElementById("resultMCB");
-const resultAdvise = document.getElementById("resultAdvise");
+const resultAdvice = document.getElementById("resultAdvice");
 
 function weightOnPress(weight){
     weightLBS.addEventListener('keyup', function(){
@@ -63,6 +63,7 @@ function calculateResults(){
     resultBMI.innerHTML = calculateBMI(weightLBS.value, heightINCH.value);
     resultMCI.innerHTML = calculateCalorieIntake();
     resultMCB.innerHTML = calculateCalorieBurn(weightKG.value, heightCM.value, getGender(), age.value);
+    resultAdvice.innerHTML = adviceToBMI(calculateBMI(weightLBS.value, heightINCH.value));
 }
 
 function calculateBMI(weightLBS, heightINCH){
@@ -91,6 +92,21 @@ function getGender(){
         // only one radio can be logically checked, don't check the rest
         break;
     }
+    }
+}
+
+function adviceToBMI(BMI){
+    if(BMI <= 18.5){
+        return "You should try to gain some weight safely.";
+    }
+    else if(BMI > 18.5 && BMI < 24.9){
+        return "You're okay but a little workout never hurt anybody!";
+    }
+    else if(BMI >= 25 && BMI < 30){
+        return "You should try to lose some weight safely.";
+    }
+    else{
+        return "You should try healthy eating plan and regular physical activity."
     }
 }
 
