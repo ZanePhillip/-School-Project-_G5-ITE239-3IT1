@@ -13,12 +13,13 @@ i006       |Mar 23, 2021   |`Fixed`     |Page error. Changed index.html's main c
 i007       |Mar 24, 2021   |`Fixed`     |Conversion Method "Fl To mL" showing wrong header title. (Must display as "Volume Converter" not "Data Converter".
 i008       |Mar 24, 2021   |`Fixed`     |Reset button must also reset Header/Title text.
 
+<style>
+H1{color:Blue !important;}
+H2{color:DarkOrange !important;}
+p{color:Black !important;}
+</style>
 
 # Color Test Document
-
-<style>H1{color:Blue;}</style>
-<style>H2{color:DarkOrange;}</style>
-<style>p{color:Black;}</style>
 
 ## Second Heading
 
