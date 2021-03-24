@@ -216,7 +216,7 @@ header .main2 .content2 .resultIndex{
 }
 
 .btn-default {
-    border-color: #fff;
+    border-color: black;
     color: #222;
     background-color: #fff;
     -webkit-transition: all .35s;
