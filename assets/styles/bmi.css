@@ -67,6 +67,8 @@ header .main2{
     width: 80%;
     top: 200px;
     left: 150px;
+    margin-top: -150px;
+    
 }
 
 header .main2 .content2 .resultIndex{
@@ -77,7 +79,7 @@ header .main2 .content2 .resultIndex{
 }
 @media(min-width:768px) {
     header {
-        min-height: 100%;
+        min-height: 80%;
     }
 
     header .header-content {
@@ -114,6 +116,7 @@ header .main2 .content2 .resultIndex{
 }
 
 .intro {
+    margin-top: 60px;
 	color: black;
     background-color: white;
     padding: 70px 0;
@@ -286,7 +289,6 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary {
     border-color: gray;
     color: #fff;
-    background-color: black;
 }
 
 .btn-primary:active,
@@ -326,7 +328,7 @@ fieldset[disabled] .btn-primary.active {
 .btn {
     border-radius: 300px;
     text-transform: uppercase;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-top: 5px;
     border-color: gray;
 }
@@ -367,6 +369,9 @@ img::-moz-selection {
 
 .resultIndex
 {
-    border-radius: 10px;
-    border-color: black;
+    border-radius: 25px;
+    border-color: grey;
+    text-align: left;
+    text-indent: 20px;
+    
 }
