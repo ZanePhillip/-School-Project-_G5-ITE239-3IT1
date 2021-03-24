@@ -318,13 +318,13 @@ header.masthead .post-heading .meta a {
   border-radius: 0;
   background: none;
   box-shadow: none !important;
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .floating-label-form-group input::-webkit-input-placeholder,
 .floating-label-form-group textarea::-webkit-input-placeholder {
   color: #868e96;
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .floating-label-form-group label {
@@ -420,4 +420,8 @@ p.card-text{
   margin-left: 70px;
   margin-top: 300px;
 
+}
+
+.col-lg-8{
+  font-weight:800;font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif
 }
