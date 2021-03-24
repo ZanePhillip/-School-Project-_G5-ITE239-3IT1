@@ -1,3 +1,12 @@
+/*
+    * Contributor : Rillera, Ralph Lawrence DV
+    * Date : March 21, 2021 
+*/
+
+
+// NOTE : Guys, paki add niyo name niyo dito pag gusto nyo i-edit itong code..
+
+
 var display = document.getElementById("display_field");
 var isShift = false;
 var shift_label = document.getElementById("shift_indicator");
