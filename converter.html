@@ -121,7 +121,7 @@
                                 <option>Hr To Sec</option>
                                 <option>Hr To Min</option>
                             </select>
-                            <button id="convertBtn" onclick="Convert()">Convert</button>
+                            <button id="convertBtn" onclick="Convert()" style="background-color: grey;">Convert</button>
                         </div>
 
                         <!-- OUTPUT AREA -->
@@ -129,21 +129,21 @@
                             <textarea value="" name="output" id="output" readonly></textarea>
                             <div id="output-buttons">
                                 <div class="tooltipWrapper">
-                                    <button id="copyBtn" onclick="CopyToClipBoard()" onmouseout="ResetTooltip()">
+                                    <button id="copyBtn" onclick="CopyToClipBoard()" onmouseout="ResetTooltip()" style="background-color: black;">
                                         <span class="tooltipWrappertext" id="toolTipMain">Copy To Clipboard</span>
                                         Copy
                                     </button>
                                 </div>
                                 <!-- <button id="clearBtn" onclick="ClearOutput()">Clear</button> -->
                                 <div class="tooltipWrapper">
-                                    <button id="clearBtn" onclick="ClearOutput()">
-                                        <span class="tooltipWrappertext" id="toolTipMain">Clear Output</span>
+                                    <button id="clearBtn" onclick="ClearOutput()" style="background-color: black;">
+                                        <span class="tooltipWrappertext" id="toolTipMain" >Clear Output</span>
                                         Clear
                                     </button>
                                 </div>
                                 <!-- <button type="reset" id="resetBtn">Reset</button> -->
                                 <div class="tooltipWrapper">
-                                    <button type="reset" id="resetBtn">
+                                    <button type="reset" id="resetBtn" style="background-color: black;">
                                         <span class="tooltipWrappertext" id="toolTipMain">Reset Inputs And Output</span>
                                         Reset
                                     </button>
