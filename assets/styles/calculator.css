@@ -100,12 +100,14 @@ header .header-content .header-content-inner p {
     header .header-content .header-content-inner {
         margin-right: auto;
         margin-left: auto;
+        margin-top: -50px;
         max-width: 1000px;
         align-items: center;
     }
 
 	header .header-content .header-content-inner h1 {
     	font-size: 100px;
+
 		}
 
     header .header-content .header-content-inner p {
